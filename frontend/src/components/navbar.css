@@ -1,0 +1,33 @@
+.navbar-nav a {
+    font-size: 18px;
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+    color: black;
+}
+
+
+.nav-link:hover {
+    opacity: 1;
+  }
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color:#808080;
+  }
+  
+  .nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-link-ltr:hover::before {
+    width: 17%;
+  }
+  
+  
