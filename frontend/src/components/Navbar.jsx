@@ -21,20 +21,22 @@ function NavScrollExample() {
                     >
                         <div className="navbar">
                             <Nav.Link className="nav-links  nav-link-ltr"> <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/home"> <div className="text-color">Home</div> </Link></Nav.Link>
-                            <Nav.Link className="nav-links  nav-link-ltr"> Products</Nav.Link>
-                            <Nav.Link className="nav-links  nav-link-ltr"> <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/about-us"> <div className="text-color">About</div></Link></Nav.Link>
+                            <Nav.Link className="nav-links  nav-link-ltr"><Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/Products"> Products</Link></Nav.Link>
                             <Nav.Link className="nav-links  nav-link-ltr"> <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/contact">Contact</Link></Nav.Link>
-                            </div></Nav>
-                
-                <div>
-                    <div className="profile">
-                        <Link to="/login"> <CgProfile color="black" size={35} /></Link>
-                        <Link to="/cart"> <BiShoppingBag color="black" size={35} /></Link>
-                        </div>
-                </div>
-            </Navbar.Collapse>
+                            <Nav.Link className="nav-links  nav-link-ltr"> <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/seller"> <div className="text-color"> Become A Seller</div></Link></Nav.Link>
 
-        </Container>
+                        </div></Nav>
+
+                    <div>
+                        <div className="profile">
+                        
+                            <Link to="/login"> <CgProfile color="black" size={35} /></Link>
+                            <Link to="/cart"> <BiShoppingBag color="black" size={35} /></Link>
+                        </div>
+                    </div>
+                </Navbar.Collapse>
+
+            </Container>
         </Navbar >
     );
 }

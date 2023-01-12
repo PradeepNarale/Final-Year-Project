@@ -1,37 +1,39 @@
 import React from 'react'
 import "./fotter.css";
+import GoogleIcon from '@mui/icons-material/Google';
+import FacebookSharpIcon from '@mui/icons-material/FacebookSharp';
+import GitHubIcon from '@mui/icons-material/GitHub';
 const Footer = () => {
     return (
-        <div class="mt-5 pt-5  footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-xs-12 about-company">
-                        <h2>ECOMM</h2>
-                        <p class="pr-5 text-white-50">mollis quam tristique convallis </p>
-                        <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+        <div className="footer-section mt-5">
+            <div className="footer-item">
+                <h2> Compony </h2>
+                <p> <a href=""> about Us</a></p>
+                <p> <a href=""> Contact Us</a></p>
+                <p> <a href=""> Our Services</a></p>
+                <p> <a href="">Privacy Policy</a></p>
+            </div>
+            <div className="footer-item">
+                <h2> Get Help</h2>
+                <p> <a href=""> FAQ</a></p>
+                <p> <a href=""> Shipping</a></p>
+                <p> <a href=""> Returns</a></p>
+                <p> <a href="">Payment Option </a></p>
+            </div>
+            <div className="footer-item">
+                <h2> Online Shop </h2>
+                <p> <a href="">Blog</a></p>
+                <p> <a href=""> Watch</a></p>
+                <p> <a href=""> Shoes</a></p>
+                <p> <a href="">Bress</a></p>
+            </div>
+            <div className="footer-item social">
+                <h2>Follow Us</h2>
+                <div className='item'>
+                    <p> <FacebookSharpIcon fontSize="large" />  </p>
+                    <p> <GitHubIcon fontSize="large" /></p>
+                    <p> <GoogleIcon fontSize="large" /></p> 
                     </div>
-                    <div class="col-lg-3 col-xs-12 links">
-                        <h4 class="mt-lg-0 mt-sm-3">Links</h4>
-                        <ul class="m-0 p-0">
-                            <div>- <a className='footer_link' href="#">About Us</a></div>
-                            <div>- <a className='footer_link' href="#">Contact Us</a></div>
-                            <div>- <a className='footer_link'  href="#">Terms & Coditions</a></div>
-                            
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-xs-12 location">
-                        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
-                        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-                        <p class="mb-0"><i class="fa fa-phone mr-3"></i>0000000</p>
-                        <p><i class="fa fa-envelope-o mr-3"></i>abc@.com</p>
-                    </div>
-                </div>
-                < hr />
-                <div class="row mt-3">
-                    <div class="col copyright">
-                        <p class="text-center"><small class=" text-white-50">© 2022. All Rights Reserved.</small></p>
-                    </div>
-                </div>
             </div>
         </div>
     )

@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
-import "./cart.css";
-
+import React from 'react'
+import "./cart.css"
 const Cart = () => {
-  return (
-    <>
-      
-    </>
-  )
+    return (
+        <>
+       
+           <div>
+            <h1>gyjh</h1>
+           </div>
+        </>
+    )
 }
 
 export default Cart

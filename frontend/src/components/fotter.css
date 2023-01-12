@@ -1,47 +1,83 @@
-
-.footer {
-    background: #152F4F;
+.footer-section {
+    width: 100%;
+    display: flex;
     color: white;
-
-    .links {
-        ul {
-            list-style-type: none;
-        }
-        li a {
-            color: white;
-            transition: color .2s;
-
-            &:hover {
-                text-decoration: none;
-                color: #4180CB;
-            }
-        }
-    }
-    .about-company {
-        i {
-            font-size: 25px;
-        }
-
-        a {
-            color: white;
-            transition: color .2s;
-
-            &:hover {
-                color: #4180CB
-            }
-        }
-    }
-
-    .location {
-        i {
-            font-size: 18px;
-        }
-    }
-    .copyright p {
-        border-top: 1px solid rgba(255, 255, 255, .1);
-    }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    background-color: rgb(32,30,30);
 }
 
-.footer_link{
-    color:white;
+.footer-section h2 {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-section h2::after {
+    content: '';
+    width: 4rem;
+    height: .2rem;
+    background: #e65b00;
+    position: relative;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-section p {
+    transition: all .2s linear;
+    margin-bottom: .6em;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-section p:hover {
+    transition: all .2s linear;
+    transform: translateX(4px);
+}
+
+.footer-section a:hover {
+    color: #f46d13;
+}
+
+.footer-item {
+    margin: 1rem;
+}
+
+.footer-item ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer-item p {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+.social p{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 1.2s linear;
+}
+.social p:hover{
+    color: #e65b00;
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+.item{
+display: flex;
+justify-content: space-between;
+}
+
+@media screen and (max-width:320px) {
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+
 }
